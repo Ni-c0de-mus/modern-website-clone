@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo|Bitter|Bree+Serif|DM+Sans|Didact+Gothic|Krub|Martel|Montserrat|News+Cycle|Quicksand|Rajdhani|Raleway|Roboto+Slab|Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Arvo|Bitter|Bree+Serif|DM+Sans|Didact+Gothic|Krub|Martel|Montserrat|News+Cycle|Quicksand|Rajdhani|Raleway|Roboto+Slab|Syncopate|Aleo&display=swap");
+
+@font-face {
+ font-family: 'aleo-regular';
+ src: url('../fonts/aleo/Aleo-Regular.ttf') format('truetype');
+ font-style: normal;
+ font-weight: 100;
+ font-family: 'newsgoth';
+ src: url('../fonts/newsgoth/newsgotl.ttf') format('truetype');
+ font-style: normal;
+ font-weight: 100;
+}
 
 *,
 *::before,
@@ -25,6 +36,7 @@
  --dm-sans: "DM Sans", sans-serif;
  --syncopate: "Syncopate", sans-serif;
  --krub: "Krub", sans-serif;
+ --aleo-regular:  'Aleo', serif;
 
  /* Coolors */
 
@@ -66,15 +78,15 @@ p {
  padding: 0.8rem 1.6rem;
  background-color: var(--white);
  color: var(--maast-blue);
+ margin-top: 2rem;
  display: inline-block;
  font-size: 1.2rem;
- text-transform: uppercase;
  text-align: center;
  transition: 420ms ease;
 }
 
 .nav__btn:hover {
- background-color: var(--maast-blue);
+ background-color: var(--green);
  color: var(--white);
 }
 
@@ -90,7 +102,7 @@ body {
 
 header {
  width: 100%;
- height: 7rem;
+ height: 8.6rem;
  position: absolute;
  top: 0;
  left: 0;
@@ -99,13 +111,15 @@ header {
 
 .container {
  width: 100%;
- max-width: 98rem;
+ max-width: 120rem;
  padding: 0 1.5rem;
  margin: 0 auto;
 }
 
 .nav__brand {
- width: 18rem;
+ width: 16rem;
+ max-width: 16rem;
+ margin: 1rem 0;
 }
 
 .menu__icons {
@@ -127,15 +141,20 @@ nav {
  padding: 0 1rem;
 }
 
+.drop__list {
+ display: none;
+}
+
 .nav__list {
  width: 100%;
+ max-width: 75rem;
  height: 100vh;
  background: var(--maast-blue);
  position: fixed;
  top: 0;
  left: 0;
  opacity: 1;
- display: flex;
+ display: none;
  flex-direction: column;
  align-items: center;
  justify-content: center;
@@ -144,8 +163,7 @@ nav {
 }
 
 .nav__list.active {
- height: 100vh;
- opacity: 1;
+ display: flex;
 }
 
 .close {
@@ -165,5 +183,104 @@ nav {
 }
 
 .nav__btn {
+ text-transform: none;
+}
+
+.nav__btn {
  color: var(--maast-blue);
+}
+
+
+/* Hero */
+
+#hero {
+ width: 100%;
+ height: 58vh;
+ background: linear-gradient(135deg, rgba(46, 77, 114, .3) 0%, rgba(46, 77, 114, .7) 100%), url('../img/interior-design.jpg') center no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+.main__message {
+ width: 100%;
+ margin: 0 auto 1rem;
+ text-align: center;
+ color: var(--white);
+ transform: translateY(5%);
+}
+
+.main__message h1 {
+ font-family: var(--aleo-regular);
+ font-weight: 200;
+ font-size: 2.8rem;
+ margin: 1.5rem;
+}
+
+.main__message h3 {
+ font-family: 'newsgoth';
+ text-rendering: optimizeLegibility;
+ font-size: 1.9rem;
+}
+
+
+/* Sponsors Grid */
+
+#sponsors {
+ padding: 0;
+}
+
+.sponsors__message {
+ text-align: center;
+ color: var(--white);
+ font-size: 2rem;
+ margin: 2rem;
+}
+
+.sponsors__img__grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+ grid-gap: 2rem;
+ align-items: center;
+ justify-content: center;
+}
+
+.sponsors__img {
+ width: auto;
+ max-width: 20rem;
+ max-height: 3.6rem;
+ height: auto;
+ margin: 2rem auto;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+ .nav__list {
+  width: initial;
+  height: initial;
+  background: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  opacity: initial;
+  display: flex;
+  flex-direction: row;
+  transition: initial;
+ }
+
+ .menu__icons {
+  display: none;
+ }
+
+ .nav__link {
+  margin-top: 0;
+  margin: 0 2rem;
+  text-transform: none;
+ }
 }

@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Bebas+Neue|Noto+Sans+JP|Noto+Sans+KR|Nunito|Public+Sans|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Solway|Sulphur+Point|Tomorrow|Ubuntu|Work+Sans&display=swap');
+
+@font-face {
+ font-family:'NewsGothicBT-Bold';
+ src:url("fonts/328A3E_0_0.eot");
+ src:url("fonts/328A3E_0_0.eot?#iefix") format("embedded-opentype"),
+ url("fonts/328A3E_0_0.woff2") format("woff2"),
+ url("fonts/328A3E_0_0.woff") format("woff"),
+ url("fonts/328A3E_0_0.ttf") format("truetype")
+}
+@font-face {
+ font-family:'NewsGothicBT-Light';
+ src:url("fonts/328A3E_1_0.eot");
+ src:url("fonts/328A3E_1_0.eot?#iefix") format("embedded-opentype"),
+ url("fonts/328A3E_1_0.woff2") format("woff2"),
+ url("fonts/328A3E_1_0.woff") format("woff"),
+ url("fonts/328A3E_1_0.ttf") format("truetype")
+}
+@font-face {
+ font-family:'NewsGothicBT-LightItalic';
+ src:url("fonts/328A3E_2_0.eot");
+ src:url("fonts/328A3E_2_0.eot?#iefix") format("embedded-opentype"),
+ url("fonts/328A3E_2_0.woff2") format("woff2"),
+ url("fonts/328A3E_2_0.woff") format("woff"),
+ url("fonts/328A3E_2_0.ttf") format("truetype")
+}
+@font-face {
+ font-family:'aleoregular';
+ src:url("fonts/Aleo-Regular-webfont.eot");
+ src:url("fonts/Aleo-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+ url("fonts/Aleo-Regular-webfont.woff") format("woff"),
+ url("fonts/Aleo-Regular-webfont.ttf") format("truetype"),
+ url("fonts/Aleo-Regular-webfont.svg#aleoregular") format("svg");
+ font-weight:normal;
+ font-style:normal
+}
+@font-face {
+ font-family:'aleolight';
+ src:url("fonts/Aleo-Light-webfont.eot");
+ src:url("fonts/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"),
+ url("fonts/Aleo-Light-webfont.woff") format("woff"),
+ url("fonts/Aleo-Light-webfont.ttf") format("truetype"),
+ url("fonts/Aleo-Light-webfont.svg#aleolight") format("svg");
+ font-weight:normal;
+ font-style:normal
+}
+
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+--roboto: 'Roboto', sans-serif;
+--solway: 'Solway', serif;
+--bebas-neue: 'Bebas Neue', cursive;
+--sulphur-point: 'Sulphur Point', sans-serif;
+--roboto-cond: 'Roboto Condensed', sans-serif;
+--raleway: 'Raleway', sans-serif;
+--roboto-mono: 'Roboto Mono', monospace;
+--public-sans: 'Public Sans', sans-serif;
+--nunito: 'Nunito', sans-serif;
+--noto-sans-jp: 'Noto Sans JP', sans-serif;
+--work-sans: 'Work Sans', sans-serif;
+--tomorrow: 'Tomorrow', sans-serif;
+--arimo: 'Arimo', sans-serif;
+--noto-sans-kr: 'Noto Sans KR', sans-serif;
+
+/* Coolors */
+
+--reg-green: #002400;
+--leather-green: #273B09;
+--antique-bronze: #58641D;
+--palm-leaf: #7B904B;
+--gainsboro: #DBD2E0;
+--white: #FFFFFF;
+--cambridge-blue: #9DB5B2;
+--azurish-white: #DAF0EE;
+--pearl-aqua: #94D1BE;
+--ras-pink: #E36397;
+--opera-mauve: #BC8DA7;
+--gray-x11: #BDB4BF;
+--gainsboro-2: #D9D9D9;
+--flash-white: #EFF2EF;
+--desert-sand: #DBD8AE;
+--antique-brass: #CA907E;
+--chestnut: #994636;
+--grizzly: #895B1E;
+--sky-blue: #88D9E6;
+--gray-blue: #8B8BAE;
+--stormcloud: #526760;
+--charcoal: #374B4A;
+--gunmetal: #2D3142;
+--silver: #BFC0C0;
+--red-ochre: #EF8354;
+--black-coral: #4F5D75;
+--cerulean: #2B59C3;
+--st-patrick: #253C78;
+--champion: #D36582;
+--khaki-css: #C9A690;
+--spanish-gray: #A2999E;
+--pastel-brown: #846A6A;
+--onyx: #353B3C;
+--cornflower: #AFCBFF;
+--maastricht: #0E1C36;
+--peach-puff: #F7D4BC;
+--siver-pink: #CFA5B4;
+--purple: #C98BB9;
+--chinese-violet: #846B8A;
+}
+
+html {
+ font-size: 10px;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+.btn {
+ border-radius: 2rem;
+ padding: 1rem 2rem;
+ margin-top: 2rem;
+ background-color: var(--stormcloud);
+ color: var(--gainsboro);
+ font-size: 1.2rem;
+ display: inline-block;
+ text-align: center;
+ transition: 420ms ease;
+}
+
+.btn:hover {
+ background-color: var(--charcoal);
+}
+
+section {
+ padding: 5rem 0;
+}
+
+body {
+ background: var(--champion);
+ color: var(--gainsboro);
+}
+
+/* Header */
+
+header {
+ width: 100%;
+ height: 7.7rem;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.container {
+ width: 100%;
+ max-width: 98rem;
+ padding: 0 1.5rem;
+ margin: 0 auto;
+}
+
+.menu__icons {
+ font-size: 3.5rem;
+ color: var(--maastricht);
+ cursor: pointer;
+ transition: 420ms ease;
+}
+
+.menu__icons:hover {
+ color: var(--gunmetal);
+}
+.nav__brand {
+ width: 15rem;
+}
+
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 1rem;
+}
+
+.nav__list {
+ width: 25rem;
+ height: 100vh;
+ background: var(--stormcloud);
+ position: fixed;
+ top: 0;
+ right: -26rem;
+ opacity: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ transition: all 630ms ease-in-out, opacity 810ms ease;
+ z-index: 1300;
+}
+
+.nav__list.active {
+ right: 0;
+ opacity: 1;
+}
+
+.close {
+ position: absolute;
+ top: 2rem;
+ left: 2rem;
+}
+
+.nav__item {
+ margin: 1.5rem 0;
+}
+
+.nav__link {
+ color: var(--gainsboro);
+ text-transform: uppercase;
+ font-size: 1.6rem;
+ transition: 420ms ease;
+}
+
+.nav__link:hover {
+ color: var(--champion);
+}
+
+/* Hero */
+
+#hero {
+ width: 100%;
+ height: 80vh;
+ background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%), url('../img/office-space.jpg') center no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+/* Main Message */
+
+.main__message {
+ width: 100%;
+ max-width: 50rem;
+ text-transform: uppercase;
+ transform: translateY(30%);
+}
+
+.main__message h3 {
+ font-size: 1.6rem;
+}
+
+.main__message h1 {
+ font-size: 3rem;
+ margin: 1rem 0;
+}
+
+.main__message p {
+ font-size: 1.4rem;
+ text-transform: lowercase;
+}
+
+/* Activities */
+
+#activities {
+ padding: 0;
+}
+
+.activities__heading {
+ text-align: center;
+ text-transform: uppercase;
+ margin: 5rem 0;
+}
+
+.activities__heading h3 {
+ font-size: 1.6rem;
+}
+
+.activities__heading h1 {
+ font-size: 2rem;
+ margin: 1rem 0;
+}
+
+.activities__grid p {
+ text-transform: lowercase;
+ font-size: 1.4rem;
+}
+
+.activities__grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+ grid-gap: 2.5rem;
+}
+
+.activities__grid__item {
+ height: 40rem;
+ padding: 5rem;
+ border-radius: 2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ position: relative;
+ cursor: pointer;
+ z-index: 1;
+}
+
+.activities__grid__item::before {
+ content: "";
+ border-radius: 2rem;
+ background-image: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+}
+
+.star__gazing {
+ background: url('../img/start-up.jpg') center no-repeat;
+}
+
+.hiking {
+ background: url('../img/start-up.jpg') center no-repeat;
+}
+
+.camping {
+ background: url('../img/start-up.jpg') center no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+
+ .nav__list {
+  width: initial;
+  height: initial;
+  background: transparent;
+  position: initial;
+  top: initial;
+  right: initial;
+  opacity: initial;
+  flex-direction: row;
+  transition: initial;
+ }
+
+ .nav__link {
+  margin: 0 2rem;
+ }
+
+ .menu__icons {
+  display: none;
+ }
+}

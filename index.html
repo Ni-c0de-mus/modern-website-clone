@@ -12,6 +12,12 @@
  <title>Modern Web</title>
  <meta name="description" content="">
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <system.webServer>
+  <staticContent>
+   <mimeMap fileExtension=".otf" mimeType="font/opentype" />
+   <mimeMap fileExtension=".ttf" mimeType="font/truetype" />
+  </staticContent>
+ </system.webServer>
  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
  <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -57,16 +63,16 @@
   <!-- Sponsors Section -->
   <section id="sponsors">
    <div class="container">
-    <div class="sponsor__message">
-     <h3>Trusted by</h3>
-     <!-- Sponsors Image Grid -->
-     <div class="img__grid">
-      <div class="sponsor__img"><img src="../img/ibm-cropped@2x.png" alt=""></div>
-      <div class="sponsor__img"><img src="../img/qualcomm-cropped@2x.png" alt=""></div>
-      <div class="sponsor__img"><img src="../img/homeaway-cropped@2x.png" alt=""></div>
-      <div class="sponsor__img"><img src="../img/xo-cropped@2x.png" alt=""></div>
+    <div class="sponsors__message">
+     <h3 class="sponsor__text">Trusted by</h3>
      </div>
-    </div>
+     <!-- Sponsors Image Grid -->
+     <div class="sponsors__img__grid">
+      <div class="sponsors__img"><img width="250" src="../img/ibm-cropped@2x.png" alt=""></div>
+      <div class="sponsors__img"><img width="250" src="../img/qualcomm-cropped@2x.png" alt=""></div>
+      <div class="sponsors__img"><img width="250" src="../img/homeaway-cropped@2x.png" alt=""></div>
+      <div class="sponsors__img"><img width="250" src="../img/xo-cropped@2x.png" alt=""></div>
+     </div>
    </div>
   </section>
   <!-- Hiring Section -->
@@ -89,7 +95,8 @@
        <img src="../img/faster-process-1.jpg" alt="">
        <div class="hiring__grid__message">
         <h1>Clear communication throughout</h1>
-        <p>Before developers are ever involved, we’ll work together to create a project brief that defines your needs.
+        <p>Before developers are ever involved, we’ll work together to create a project brief that defines your
+         needs.
         </p>
        </div>
       </div>
